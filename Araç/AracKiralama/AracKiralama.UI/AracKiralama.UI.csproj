@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7BCA99DC-9011-480A-B122-ECA72CDD347C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AracKiralama.UI</RootNamespace>
+    <AssemblyName>AracKiralama.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaSayfa.Designer.cs">
+      <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBilgiGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBilgiGuncelleme.Designer.cs">
+      <DependentUpon>frmBilgiGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKaydol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKaydol.Designer.cs">
+      <DependentUpon>frmKaydol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKiralamaEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKiralamaEkrani.Designer.cs">
+      <DependentUpon>frmKiralamaEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAnaSayfa.resx">
+      <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBilgiGuncelleme.resx">
+      <DependentUpon>frmBilgiGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKaydol.resx">
+      <DependentUpon>frmKaydol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKiralamaEkrani.resx">
+      <DependentUpon>frmKiralamaEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AracKiralama.BLL\AracKiralama.BLL.csproj">
+      <Project>{24ef808c-5bfe-43df-8cf8-2be2aee6fca7}</Project>
+      <Name>AracKiralama.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AracKiralama.Entities\AracKiralama.Entities.csproj">
+      <Project>{0a37f8fc-b7c2-42bb-8720-738975d8f421}</Project>
+      <Name>AracKiralama.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\1181.jpg" />
+    <Content Include="images\1182.jpg" />
+    <Content Include="images\1183.jpg" />
+    <Content Include="images\1184.jpg" />
+    <Content Include="images\1185.jpg" />
+    <Content Include="images\318d1.jpg" />
+    <Content Include="images\318d2.jpg" />
+    <Content Include="images\318d3.jpg" />
+    <Content Include="images\318d4.jpg" />
+    <Content Include="images\318d5.jpg" />
+    <Content Include="images\a1801.jpg" />
+    <Content Include="images\a1802.jpg" />
+    <Content Include="images\a1803.jpg" />
+    <Content Include="images\a1804.jpg" />
+    <Content Include="images\a1805.jpg" />
+    <Content Include="images\a41.jpg" />
+    <Content Include="images\a42.jpg" />
+    <Content Include="images\a43.jpg" />
+    <Content Include="images\a44.jpg" />
+    <Content Include="images\a45.jpg" />
+    <Content Include="images\c200d1.jpg" />
+    <Content Include="images\c200d2.jpg" />
+    <Content Include="images\c200d3.jpg" />
+    <Content Include="images\c200d4.jpg" />
+    <Content Include="images\c200d5.jpg" />
+    <Content Include="images\fiategea1.jpg" />
+    <Content Include="images\fiategea2.jpg" />
+    <Content Include="images\fiategea3.jpg" />
+    <Content Include="images\fiategea4.jpg" />
+    <Content Include="images\fiategea5.jpg" />
+    <Content Include="images\gla2001.jpg" />
+    <Content Include="images\gla2002.jpg" />
+    <Content Include="images\gla2003.jpg" />
+    <Content Include="images\gla2004.jpg" />
+    <Content Include="images\gla2005.jpg" />
+    <Content Include="images\pejo1.jpg" />
+    <Content Include="images\pejo2.jpg" />
+    <Content Include="images\pejo3.jpg" />
+    <Content Include="images\pejo4.jpg" />
+    <Content Include="images\pejo5.jpg" />
+    <Content Include="images\renoclio1.jpg" />
+    <Content Include="images\renoclio2.jpg" />
+    <Content Include="images\renoclio3.jpg" />
+    <Content Include="images\renoclio4.jpg" />
+    <Content Include="images\renoclio5.jpg" />
+    <Content Include="images\v401.jpg" />
+    <Content Include="images\v402.jpg" />
+    <Content Include="images\v403.jpg" />
+    <Content Include="images\v404.jpg" />
+    <Content Include="images\v405.jpg" />
+    <Content Include="images\x61.jpg" />
+    <Content Include="images\x62.jpg" />
+    <Content Include="images\x63.jpg" />
+    <Content Include="images\x64.jpg" />
+    <Content Include="images\x65.jpg" />
+    <Content Include="images\xc901.jpg" />
+    <Content Include="images\xc902.jpg" />
+    <Content Include="images\xc903.jpg" />
+    <Content Include="images\xc904.jpg" />
+    <Content Include="images\xc905.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
